@@ -1,7 +1,7 @@
 /**********************************************/
 /* Author	: Naveenkumar N               */
 /* Date		: 1-08-2019                   */
-/* Filename	: link_list.c                 */
+/* Filename	: link_list.h                 */
 /* Description	: Linklist Insert delete Node */
 /**********************************************/
 
