@@ -8,9 +8,16 @@
 
 #include "stack.h"
 
+struct stack
+{
+	int stack[MAXSIZE];
+	int top;
+}stack;
+
+
 int main(){
 
-	int choice;
+	int a;
 
 	stack.top = -1;
 
@@ -19,9 +26,9 @@ int main(){
 		printf(" 2 -> Pop\n");
 		printf(" 3 -> Display\n");
 		printf(" 4 -> Exit\n");
-		scanf("%d",&choice);
+		scanf("%d",&a);
 
-		switch(choise){
+		switch(a){
 			case 1 :
 				push();
 				break ;
@@ -32,7 +39,7 @@ int main(){
 				display();
 				break ;
 			case 4 :
-				return;
+				return 0;
 		}
 	}
 }
@@ -46,9 +53,9 @@ void push(){
 		return;
 	}else{
 		printf("Enter the element to push\n");
-		scanf("d",&num);
+		scanf("%d",&num);
 		stack.top = stack.top + 1;
-		stack.stk[stack.top] = num;
+		stack.stack[stack.top] = num;
 	}
 
 }
@@ -57,10 +64,9 @@ int pop(){
 	int num;
 	if(stack.top == -1){
 		printf("Stack is empty\n");
-		return;
 	}else{
-		num = stack.stk[stack.top];
-		printf("poped element = %d\n",stack.stk[stack.top]):
+		num = stack.stack[stack.top];
+		printf("poped element = %d\n",stack.stack[stack.top]);
 		stack.top = stack.top - 1;
 	}
 
@@ -69,12 +75,11 @@ void display(){
 	int i;
 	if(stack.top == -1){
 		printf("Stack is empty\n");
-		return;
 	}else{
 		printf("The status of stack\n");
 		for(i = stack.top; i>=0; i--)
 		{
-			printf("%d\n",stack.stk[i]);
+			printf("%d\n",stack.stack[i]);
 		}
 	}
 }

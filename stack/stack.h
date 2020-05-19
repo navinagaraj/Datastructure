@@ -22,9 +22,4 @@ void display();
 
 
 /* user defined datatype definitions */
-struct stack
-{
-	int stack[MAXSIZE];
-	int top;
-};
 #endif //MAKE_H
