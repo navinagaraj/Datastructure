@@ -1,0 +1,23 @@
+/**********************************************/
+/* Author       : Naveenkumar N               */
+/* Date         : 10-05-2020                  */
+/* Filename     : readme                      */
+/* Description  : queue operation             */
+/**********************************************/
+Queue operations may involve initializing or defining the queue, utilizing it, and then completely erasing it from the memory. Here we shall try to understand the basic operations associated with queues −
+
+    enqueue() − add (store) an item to the queue.
+
+    dequeue() − remove (access) an item from the queue.
+
+Few more functions are required to make the above-mentioned queue operation efficient. These are −
+
+    peek() − Gets the element at the front of the queue without removing it.
+
+    isfull() − Checks if the queue is full.
+
+    isempty() − Checks if the queue is empty.
+
+In queue, we always dequeue (or access) data, pointed by front pointer and while enqueing (or storing) data in the queue we take help of rear pointer.
+
+
